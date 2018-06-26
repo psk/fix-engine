@@ -10,7 +10,7 @@ module Fix
 
       include Connection
 
-      attr_accessor :username
+      attr_accessor :password, :raw_data
 
       #
       # Run after we've connected to the server
