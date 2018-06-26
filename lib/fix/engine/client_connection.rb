@@ -30,7 +30,8 @@ module Fix
       #
       def send_logon
         logon = FP::Messages::Logon.new
-        logon.username            = @username
+        logon.password            = @password
+        logon.raw_data            = @raw_data
         logon.target_comp_id      = @peer_comp_id
         logon.sender_comp_id      = @comp_id 
         logon.reset_seq_num_flag  = true
