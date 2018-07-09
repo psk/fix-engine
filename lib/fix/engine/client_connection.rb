@@ -34,7 +34,7 @@ module Fix
         logon.raw_data            = @raw_data
         logon.target_comp_id      = @peer_comp_id
         logon.sender_comp_id      = @comp_id 
-        logon.reset_seq_num_flag  = true
+        logon.drop_copy_flag      = true
         send_msg(logon)
       end
 
